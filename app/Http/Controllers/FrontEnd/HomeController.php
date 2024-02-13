@@ -1,4 +1,9 @@
 <?php
+/*
+ * Copyright notice for the website built for saqer.com.iq.
+ * Copyright (c) 2024. Jodx.dev. All rights reserved.
+ * This work is protected by copyright law. Unauthorized reproduction, distribution, or modification is strictly prohibited.
+ */
 
 namespace App\Http\Controllers\FrontEnd;
 
@@ -35,7 +40,7 @@ class HomeController extends Controller
 
     public function blog_details($id){
         return view("template.blog_details");
-    }   
+    }
 
 
 }

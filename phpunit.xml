@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright notice for the website built for saqer.com.iq.
+  ~ Copyright (c) 2024. Jodx.dev. All rights reserved.
+  ~ This work is protected by copyright law. Unauthorized reproduction, distribution, or modification is strictly prohibited.
+  -->
+
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
          bootstrap="vendor/autoload.php"

@@ -1,3 +1,9 @@
+/*
+ * Copyright notice for the website built for saqer.com.iq.
+ * Copyright (c) 2024. Jodx.dev. All rights reserved.
+ * This work is protected by copyright law. Unauthorized reproduction, distribution, or modification is strictly prohibited.
+ */
+
 /*!
  * Isotope PACKAGED v2.1.1
  * Filter & sort magical layouts
@@ -43,10 +49,10 @@ $(window).load(function(){
           // otherwise, apply new options
           $portfolio.isotope( options );
         }
-        
+
         return false;
       });
-        
+
     });
 });
 

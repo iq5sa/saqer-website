@@ -1,4 +1,9 @@
 <?php
+/*
+ * Copyright notice for the website built for saqer.com.iq.
+ * Copyright (c) 2024. Jodx.dev. All rights reserved.
+ * This work is protected by copyright law. Unauthorized reproduction, distribution, or modification is strictly prohibited.
+ */
 
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
@@ -83,7 +88,11 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'ar',
+    "locales" => [
+        "ar",
+        "en"
+    ],
 
     /*
     |--------------------------------------------------------------------------

@@ -1,3 +1,9 @@
+/*
+ * Copyright notice for the website built for saqer.com.iq.
+ * Copyright (c) 2024. Jodx.dev. All rights reserved.
+ * This work is protected by copyright law. Unauthorized reproduction, distribution, or modification is strictly prohibited.
+ */
+
 
 @media (max-width: 1450px) {
 	.project-text > p {font-size: 18px;}
@@ -81,7 +87,7 @@
 	.pagination-mint nav {display: block;}
 	.catalog-product-info {padding-left: 0;}
 	.catalog-product-info > h2 {font-size: 38px;line-height: 47px;}
-	.catalog-product-slide img {height: 300px;object-fit: contain;} 
+	.catalog-product-slide img {height: 300px;object-fit: contain;}
 	.catalog-product-info {margin-top: 80px;}
 	.contact_info {padding: 67px 40px;}
 	.contact-head {padding-top: 0;}
@@ -98,7 +104,7 @@
 
 
 @media (max-width: 991px) {
-	header {top: 30px;}	
+	header {top: 30px;}
 	.banner-slider {display: none;}
 	.banner-content {padding-top: 40px;}
 	.about-text {margin-top: 100px;}
