@@ -7,7 +7,7 @@
     <meta name="description" content="Mint Multipurpose Agency Website"/>
     <meta name="author" content="George_fx">
     <meta name="keywords" content=""/>
-    <link rel="icon" href="../../images/favicon.png">
+    <link rel="icon" href="">
 
     <link rel="stylesheet" href="{{ mix('css/animate.css') }}">
     <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">    <link rel="stylesheet" href="{{ mix('css/all.min.css') }}">
@@ -40,7 +40,7 @@
             <div class="header-content">
                 <div class="logo">
                     <a href="index.html" title="">
-                        <img src="../../images/logo.png" alt="">
+                        <img src="../images/logo.png" alt="">
                     </a>
                 </div><!--logo end-->
                 <nav>
@@ -74,17 +74,17 @@
                 <ul class="mint-funcz">
                     <li>
                         <a href="#" title="" class="search-btn">
-                            <img src="../../images/icon3.png" alt="">
+                            <img src="../images/icon3.png" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="#" title="">
-                            <img src="../../images/icon4.png" alt="">
+                            <img src="../images/icon4.png" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="#" title="">
-                            <img src="../../images/icon5.png" alt="">
+                            <img src="../images/icon5.png" alt="">
                             <span class="cart-number">3</span>
                         </a>
                     </li>
@@ -153,7 +153,7 @@
                         <ul class="banz-list wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="700ms">
                             <li>
                                 <div class="mint-fzt">
-                                    <img src="../../images/icon1.png" alt="">
+                                    <img src="../images/icon1.png" alt="">
                                     <div class="bzn-csd">
                                         <h5>Durability</h5>
                                         <span>Exclusive 10 year warrantly</span>
@@ -162,7 +162,7 @@
                             </li>
                             <li>
                                 <div class="mint-fzt">
-                                    <img src="../../images/icon2.png" alt="">
+                                    <img src="../images/icon2.png" alt="">
                                     <div class="bzn-csd">
                                         <h5>Modern interior</h5>
                                         <span>Exclusive 10 year warrantly</span>
@@ -656,7 +656,7 @@
             </div><!--top-footer end-->
             <div class="bottom-footer">
                 <div class="ft-logo">
-                    <img src="../../images/ft-logo.png" alt="">
+                    <img src="../images/ft-logo.png" alt="">
                 </div><!--ft-logo end-->
                 <ul class="btm-links">
                     <li><a href="#" title="">Privacy Policy</a></li>

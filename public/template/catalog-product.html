@@ -13,16 +13,17 @@
 	<meta name="description" content="Mint Multipurpose Agency Website" />
 	<meta name="author" content="George_fx">
 	<meta name="keywords" content="" />
-	<link rel="icon" href="../../images/favicon.png">
-	<link rel="stylesheet" type="text/css" href="../../css/animate.css">
+	<link rel="icon" href="../images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
 	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../../css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="../../css/line-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="../../css/slick.css">
-	<link rel="stylesheet" type="text/css" href="../../css/slick-theme.css">
-	<link rel="stylesheet" type="text/css" href="../../css/color.css">
-	<link rel="stylesheet" type="text/css" href="../../css/style.css">
-	<link rel="stylesheet" type="text/css" href="../../css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="../css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/line-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/slick.css">
+	<link rel="stylesheet" type="text/css" href="../css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="../css/color.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/responsive.css">
 </head>
 
 
@@ -40,12 +41,12 @@
 
 	<div class="wrapper">
 
-		<header>
+		<header class="header-bg">
 			<div class="container">
 				<div class="header-content">
 					<div class="logo">
 						<a href="home.blade.php" title="">
-							<img src="../../images/logo.png" alt="">
+							<img src="../images/logo.png" alt="">
 						</a>
 					</div><!--logo end-->
 					<nav>
@@ -58,7 +59,7 @@
 									<li><a href="#" title="">Portfolio Details</a></li>
 								</ul>
 							</li>
-							<li><a href="catalog.html" title="">Shop</a>
+							<li><a class="active" href="catalog.html" title="">Shop</a>
 								<ul>
 									<li>
 										<a href="catalog-product.html" title="">Shop Details</a>
@@ -73,23 +74,23 @@
 									<li><a href="blog-single.html" title="">Blog Single</a></li>
 								</ul>
 							</li>
-							<li><a class="active" href="contact.html" title="">Contact</a></li>
+							<li><a href="contact.html" title="">Contact</a></li>
 						</ul>
 					</nav><!--navigation end-->
 					<ul class="mint-funcz">
 						<li>
 							<a href="#" title="" class="search-btn">
-								<img src="../../images/icon3.png" alt="">
+								<img src="../images/icon3.png" alt="">
 							</a>
 						</li>
 						<li>
 							<a href="#" title="">
-								<img src="../../images/icon4.png" alt="">
+								<img src="../images/icon4.png" alt="">
 							</a>
 						</li>
 						<li>
 							<a href="#" title="">
-								<img src="../../images/icon5.png" alt="">
+								<img src="../images/icon5.png" alt="">
 								<span class="cart-number">3</span>
 							</a>
 						</li>
@@ -145,124 +146,65 @@
 			</ul>
 		</div><!--responsive-mobile-menu end-->
 
-		<section class="pager-section">
+		<section class="pager-section no-bg style2">
 			<div class="container">
 				<div class="pager-info">
 					<ul class="breadcrumb">
 						<li><a href="#" title="">Home</a></li>
-						<li><span>Contacts</span></li>
+						<li><a href="#" title="">Shop</a></li>
+						<li><a href="#" title="">Catalog</a></li>
+						<li><span>Modern white chair</span></li>
 					</ul><!--breadcrumb end-->
-					<h2>Contacts</h2>
-					<span>How to contact us</span>
 				</div>
-				<div class="pger-imgs style2">
-					<div class="abt-imgz">
-						<img src="https://via.placeholder.com/763x509" alt="">
-					</div>
-				</div><!--pger-imgs end-->
 				<div class="clearfix"></div>
 			</div>
 		</section><!--pager-section end-->
 
-		<section class="page-content">
+		<section class="page-content pt-0">
 			<div class="container">
-				<div class="contact-page">
-					<div class="contact-head">
-						<p>Any questions or suggestions? <br /> Write us a message and we will contact you!</p>
-					</div><!--contact-head end-->
-					<div class="contact-main">
-						<div class="row">
-							<div class="col-lg-4">
-								<div class="contact_info">
-									<h3 class="sub-title white">Contacts</h3>
-									<ul class="cl-list">
-										<li>
-											<span class="ci-icon">
-												<img src="../../images/ci1.png" alt="">
-											</span>
-											<p>1556 Broadway, suite 416 New York, NY 10120 USA</p>
-										</li>
-										<li>
-											<span class="ci-icon">
-												<img src="../../images/ci2.png" alt="">
-											</span>
-											<p><span>Mon-Sat:</span> 9 am til 6 pm <span>Sunday:</span> Closed</p>
-										</li>
-										<li>
-											<span class="ci-icon">
-												<img src="../../images/ci3.png" alt="">
-											</span>
-											<p>in.design@gmail.com</p>
-										</li>
-										<li>
-											<span class="ci-icon">
-												<img src="../../images/ci4.png" alt="">
-											</span>
-											<p>+44 20 7722 0088</p>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-8">
-								<div class="contact-main-form">
-									<form method="post" action="#" id="contact-form">
-										<div class="response"></div>
-										<div class="row">
-											<div class="col-sm-6">
-												<div class="form-group">
-													<label>Name</label>
-													<input type="text" name="name" class="form-control name" placeholder="Daniel">
-												</div><!--form-group end-->
-											</div>
-											<div class="col-sm-6">
-												<div class="form-group">
-													<label>What city are you from?</label>
-													<select class="form-control">
-														<option>Los Angeles</option>
-														<option>Los Angeles</option>
-														<option>Los Angeles</option>
-														<option>Los Angeles</option>
-													</select>
-												</div><!--form-group end-->
-											</div>
-											<div class="col-sm-6">
-												<div class="form-group">
-													<label>E-mail</label>
-													<input type="email" name="email" class="form-control email" placeholder="Example@gmail.com">
-												</div><!--form-group end-->
-											</div>
-											<div class="col-sm-6">
-												<div class="form-group">
-													<label>Phone Number</label>
-													<input type="text" name="name" class="form-control" placeholder="44 20 7700 0055">
-												</div><!--form-group end-->
-											</div>
-											<div class="col-sm-10">
-												<div class="form-group">
-													<label>Message</label>
-													<textarea class="form-control" placeholder="Hello! I have this question..."></textarea>
-												</div><!--form-group end-->
-											</div>
-											<div class="col-sm-2">
-												<div class="form-submit">
-													<button type="button" id="submit"><img src="../../images/submit.png" alt=""></button>
-												</div><!--form-submit end-->
-											</div>
-										</div>
-									</form>
-								</div><!--contact-main-form end-->
-							</div>
+				<div class="catalog-product-page">
+					<div class="row align-items-center">
+						<div class="col-lg-6">
+							<div class="cataglog-products">
+								<div class="catalog-product-slide">
+									<img src="https://via.placeholder.com/1000x1000" alt="" class="w-100">
+								</div><!--catalog-product-slide end-->
+								<div class="catalog-product-slide">
+									<img src="https://via.placeholder.com/1000x1000" alt="" class="w-100">
+								</div><!--catalog-product-slide end-->
+								<div class="catalog-product-slide">
+									<img src="https://via.placeholder.com/1000x1000" alt="" class="w-100">
+								</div><!--catalog-product-slide end-->
+							</div><!--cataglog-products end-->
 						</div>
-					</div><!--contact-main end-->
-					<div class="contact-social">
-						<span>Subscribe to our social networks :</span>
-						<ul class="social-links without-bg">
-							<li><a href="#" title=""><i class="fab fa-behance"></i></a></li>
-							<li><a href="#" title=""><i class="fab fa-instagram"></i></a></li>
-							<li><a href="#" title=""><i class="fab fa-facebook-f"></i></a></li>
-						</ul>
-					</div><!--contact-social end-->
-				</div><!--contact-page end-->
+						<div class="col-lg-6">
+							<div class="catalog-product-info">
+								<span class="status">New</span>
+								<h2>Modern white chair</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut tristique sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean commodo elit erat, vel hendrerit lacus euismod vel. Morbi eget lorem purus. Maecenas sodales pretium felis, quis rutrum est pellentesque at. In eu ullamcorper sem. Curabitur in lectus augue. </p>
+								<ul class="otz-optz">
+									<li>
+										<span>$249</span>
+									</li>
+									<li>
+										<a href="#" title="" class="btn-default">Buy now <i class="la la-arrow-right"></i></a>
+									</li>
+									<li>
+										<a href="#" title="" class="cart-btn-circle"><i class="la la-heart"></i></a>
+									</li>
+								</ul>
+								<ul class="catg-controls">
+									<li>
+										<a href="#" title=""><i class="la la-angle-left"></i>Prev product</a>
+									</li>
+									<li>
+										<a href="#" title="">Next product<i class="la la-angle-right"></i></a>
+									</li>
+								</ul><!--catg-controls end-->
+							</div><!--catalog-product-info end-->
+						</div>
+					</div>
+				</div><!--catalog-product-page end-->
 			</div>
 		</section><!--page-content end-->
 
@@ -329,7 +271,7 @@
 				</div><!--top-footer end-->
 				<div class="bottom-footer">
 					<div class="ft-logo">
-						<img src="../../images/ft-logo.png" alt="">
+						<img src="../images/ft-logo.png" alt="">
 					</div><!--ft-logo end-->
 					<ul class="btm-links">
 						<li><a href="#" title="">Privacy Policy</a></li>
@@ -344,13 +286,14 @@
 
 
 
-<script src="../../js/jquery.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery-ui.js"></script>
 <script src="../../js/popper.js"></script>
 <script src="../../js/bootstrap.min.js"></script>
-<script src="../../js/plugin/slick.min.js"></script>
-<script src="../../js/plugin/html5lightbox.js"></script>
-<script src="../../js/validate.js"></script>
-<script src="../../js/script.js"></script>
+<script src="../js/plugin/slick.min.js"></script>
+<script src="../js/plugin/html5lightbox.js"></script>
+<script src="../js/placeholdem.min.js"></script>
+<script src="../js/script.js"></script>
 
 
 </body>

@@ -206,7 +206,7 @@
 @media (max-width: 576px) {
 	.banner-content {padding-top: 20px;}
 	.lnk-default {height: 50px;line-height: 50px;padding: 0 30px;}
-	.main-banner {padding: 110px 0 65px;}
+	.main-banner {padding: 152px 0 65px;}
 	.mint-funcz {display: none;}
 	.block {padding: 80px 0;}
 	.sub-title {font-size: 34px;line-height: 45px;}
@@ -222,7 +222,10 @@
 	.sub-title {font-size: 30px;}
 	.section-title .lnk-default2 {display: none;}
 	.project-text > p {font-size: 18px;line-height: 34px;margin-bottom: 35px;}
-	.menu-btnn {margin-left: auto;}
+	.menu-btnn {margin-right: auto;}
+	.header-content .social-links{
+		display: none;
+	}
 	.error-text > img {max-width: 60%;margin-bottom: 30px;}
 	.error-text > h2 {font-size: 28px;margin-bottom: 20px;}
 	.error-text p {font-size: 16px;line-height: 28px;margin-bottom: 50px;}
