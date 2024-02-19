@@ -1,3 +1,9 @@
+/*
+ * Copyright notice for the website built for saqer.com.iq.
+ * Copyright (c) 2024. Jodx.dev. All rights reserved.
+ * This work is protected by copyright law. Unauthorized reproduction, distribution, or modification is strictly prohibited.
+ */
+
 $(window).on("load", function() {
     "use strict";
 
@@ -26,7 +32,7 @@ $(window).on("load", function() {
     });
 
     //  ============= ANIMATION ON DEFAULT THEME BUTTON ===============
-    
+
     $('.lnk-default').on('mouseenter', function(e) {
       var parentOffset = $(this).offset(),
       relX = e.pageX - parentOffset.left,

@@ -1,188 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Mint - Interior Design HTML Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mint Multipurpose Agency Website"/>
-    <meta name="author" content="George_fx">
-    <meta name="keywords" content=""/>
-    <link rel="icon" href="{{asset('images/favicon.png')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/animate.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/all.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/line-awesome.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/slick.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/slick-theme.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/color.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset("css/responsive.css")}}">
-
-</head>
-
-
-<body>
-
-
-<div class="page-loading">
-    <div class="thecube">
-        <div class="cube c1"></div>
-        <div class="cube c2"></div>
-        <div class="cube c4"></div>
-        <div class="cube c3"></div>
-    </div>
-</div><!--page-loading end-->
-
-<div class="wrapper">
-
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="index.html" title="">
-                        <img src="../../images/logo.png" alt="">
-                    </a>
-                </div><!--logo end-->
-                <nav>
-                    <ul>
-                        <li><a class="active" href="index.html" title="">Home</a></li>
-                        <li><a href="about.html" title="">About Us</a></li>
-                        <li><a href="services.html" title="">Services</a></li>
-                        <li><a href="portfolio.html" title="">Portfolio</a>
-                            <ul>
-                                <li><a href="#" title="">Portfolio Details</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="catalog.html" title="">Shop</a>
-                            <ul>
-                                <li>
-                                    <a href="catalog-product.html" title="">Shop Details</a>
-                                </li>
-                                <li>
-                                    <a href="shop.html" title="">Shop 2</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="blog.html" title="">Blog</a>
-                            <ul>
-                                <li><a href="blog-single.html" title="">Blog Single</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html" title="">Contact</a></li>
-                    </ul>
-                </nav><!--navigation end-->
-                <ul class="mint-funcz">
-                    <li>
-                        <a href="#" title="" class="search-btn">
-                            <img src="../../images/icon3.png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="">
-                            <img src="../../images/icon4.png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="">
-                            <img src="../../images/icon5.png" alt="">
-                            <span class="cart-number">3</span>
-                        </a>
-                    </li>
-                </ul><!--mint-funcz end-->
-                <div class="contact-head-info">
-                    <h4>+44 20 7722 0088</h4>
-                    <a href="#" title="">Order a call</a>
-                </div><!--contact-head-info end-->
-                <div class="menu-btnn">
-                    <div class="menu-btn">
-                        <span class="bar1"></span>
-                        <span class="bar2"></span>
-                        <span class="bar3"></span>
-                    </div><!--menu-bar end-->
-                </div>
-            </div><!--header-content end-->
-        </div>
-    </header><!--header end-->
-
-    <div class="header-search d-flex flex-wrap justify-content-center align-items-center w-100">
-        <span class="search-close-btn"><i class="fas fa-times"></i></span>
-        <form>
-            <input type="text" placeholder="Search">
-        </form>
-    </div><!--header-search end-->
-
-    <div class="responsive-mobile-menu">
-        <ul>
-            <li><a href="index.html" title="">Home</a></li>
-            <li><a href="about.html" title="">About Us</a></li>
-            <li><a href="services.html" title="">Services</a></li>
-            <li><a href="portfolio.html" title="">Portfolio</a>
-                <ul>
-                    <li><a href="#" title="">Portfolio Details</a></li>
-                </ul>
-            </li>
-            <li><a href="catalog.html" title="">Shop</a>
-                <ul>
-                    <li>
-                        <a href="catalog-product.html" title="">Shop Details</a>
-                    </li>
-                    <li>
-                        <a href="shop.html" title="">Shop 2</a>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="blog.html" title="">Blog</a>
-                <ul>
-                    <li><a href="blog-single.html" title="">Blog Single</a></li>
-                </ul>
-            </li>
-            <li><a href="contact.html" title="">Contact</a></li>
-        </ul>
-    </div><!--responsive-mobile-menu end-->
-
+@extends('template.layout')
+@section('content')
     <section class="main-banner">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="banner-content">
-                        <h2 class="wow fadeInUp" data-wow-duration="1000ms">We Make Your H<span>o</span>me Better</h2>
-                        <p class="wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">We are tending to the
-                            thousands of details it takes to create a custom home tailored to your lifestyle</p>
-                        <a href="contact.html" title="" class="lnk-default wow fadeInUp" data-wow-duration="1000ms"
-                           data-wow-delay="500ms">to order <i class="la la-arrow-right"></i> <span></span></a>
-                        <ul class="banz-list wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="700ms">
-                            <li>
-                                <div class="mint-fzt">
-                                    <img src="../../images/icon1.png" alt="">
-                                    <div class="bzn-csd">
-                                        <h5>Durability</h5>
-                                        <span>Exclusive 10 year warrantly</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="mint-fzt">
-                                    <img src="../../images/icon2.png" alt="">
-                                    <div class="bzn-csd">
-                                        <h5>Modern interior</h5>
-                                        <span>Exclusive 10 year warrantly</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul><!--banz-list end-->
+                        <h2 class="wow fadeInUp" data-wow-duration="1000ms"> شركة صقر
+                            الشاهين</h2>
+                        <p class="wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+
+                            في شركة صقر الشاهين، نتجاوز أن نكون مجرد شركة؛ بل نجسد تواصلًا رؤويا متطورة بين التجارة
+                            العالمية والتصميم الفني وتنظيم الفعاليات الاستثنائي.
+                        </p>
+                        <a href="#" title="" class="lnk-default wow fadeInUp" data-wow-duration="1000ms"
+                           data-wow-delay="500ms">اكتشف المزيــد <i class="la la-arrow-left"></i> <span></span></a>
+
                         <div class="clearfix"></div>
                     </div><!--banner-content end-->
                 </div>
                 <div class="col-lg-6">
                     <div class="banner-slider">
                         <div class="banner-slide">
-                            <img src="https://via.placeholder.com/617x925" alt="">
+                            <img src="{{asset("images/banner/1.jpg")}}" alt="">
                         </div><!--banner-slide end-->
                         <div class="banner-slide">
-                            <img src="https://via.placeholder.com/617x925" alt="">
+                            <img src="{{asset("images/banner/2.jpg")}}" alt="">
                         </div><!--banner-slide end-->
                         <div class="banner-slide">
-                            <img src="https://via.placeholder.com/617x925" alt="">
+                            <img src="{{asset("images/banner/3.jpeg")}}" alt="">
                         </div><!--banner-slide end-->
                     </div><!--banner-slider end-->
                 </div>
@@ -194,157 +39,110 @@
         <div class="container">
             <div class="about-us-section">
                 <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="abt-imgz">
-                            <img class="wow fadeInUp" data-wow-duration="1000ms"
-                                 src="https://via.placeholder.com/309x463" alt="">
-                            <img class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms"
-                                 src="https://via.placeholder.com/327x299" alt="">
-                        </div><!--abt-imgz end-->
-                        <div class="abt-txt">
-                            <h4>Watch a video about how we work and try for our customers</h4>
-                            <span>Play video</span>
-                            <a href="https://www.youtube.com/watch?v=pNxqh-JCMpw" title=""
-                               class="play-btn html5lightbox"><i class="fa fa-play"></i></a>
-                        </div>
-                    </div>
+
                     <div class="col-lg-6">
                         <div class="about-text">
-                            <h2 class="sub-title">History of our creation</h2>
-                            <p>Since our humble beginnings in 2006, We has significantly expanded its collection of
-                                exclusive lamps. Today we are proud to present you our best lighting design solutions.
-                                Our collection is updated every day with beautiful solutions and we are glad that you,
-                                our customers, support us on way! Our collection is updated every day with beautiful
-                                solutions</p>
-                            <a href="about.html" title="" class="lnk-default2">Read more <i
-                                    class="la la-arrow-right"></i></a>
+                            <h2 class="sub-title">المدير التنفيذي </h2>
+                            <p class="text-justify" style="line-height: 2em;height: 200px; overflow: hidden">
+
+                                أهلاً ومرحبًا بكم في عالم الابتكار والتميز حيث تتجاوب "صقر الشاهين" مع تحديات السوق بروح
+                                ريادية واستراتيجية تجعلنا متقدمين في ميداننا. نحن نفتخر بتقديم خدمات استثنائية ومنتجات
+                                فريدة تلبي توقعات عملائنا الكرام.
+
+                                في "صقر الشاهين"، نؤمن بالتميز في كل تفاصيل عملنا. نسعى جاهدين لتحقيق الريادة في مجالنا
+                                من خلال الابتكار المستمر وتحسين الأداء. نحن نعتبر أن كل فرد في فريقنا هو جزء لا غنى عنه
+                                من نجاحنا، ونعمل معًا بروح الفريق لتحقيق أهدافنا المشتركة.
+
+                                نحن ملتزمون بتقديم خدمة عملاء لا مثيل لها، وضمان رضاكم التام. نحن هنا لندعمكم ونساعدكم
+                                في تحقيق أهدافكم الاستراتيجية وتطلعاتكم المستقبلية. في "صقر الشاهين"، لا يكون التفوق
+                                مجرد هدف، بل يكون أسلوب حياة نتبناه.
+
+                                نتطلع إلى بناء علاقة قائمة على الثقة والشفافية معكم، ونأمل أن تكونوا جزءًا لا يتجزأ من
+                                رحلتنا نحو النجاح. شكرًا لثقتكم بنا وبفريق عمل "صقر الشاهين".
+
+                                مع خالص التقدير،
+
+                            </p>
+                            <a href="#" title="" class="lnk-default2 mb-4">اقرأ المزيد <i
+                                        class="la la-arrow-left"></i></a>
                         </div><!--about-text end-->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="">
+                            <img class="wow fadeInUp img-fluid mint-shadow" data-wow-duration="1000ms"
+                                 src="{{asset("images/ceo.jpeg")}}" alt="">
+
+                        </div><!--abt-imgz end-->
+
                     </div>
                 </div>
             </div><!--about-us-section end-->
         </div>
     </section>
 
-    <section class="block pb-0">
+    <section class="block pb-0" style="margin-bottom: 160px;">
         <div class="container">
-            <h3 class="sub-title">A team United by shared values</h3>
+            <h3 class="sub-title">خدماتنا</h3>
             <div class="team-section">
                 <div class="row">
-                    <div class="col-lg-5">
-                        <div class="team-head">
-                            <h2>6 </h2>
-                            <h3>Professional designers in our team</h3>
-                        </div><!--team-head end-->
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                        <div class="mint-shadow w-100 h-100 p-3 text-center">
+                            <img src="{{asset("images/icons/general_trade_icon.svg")}}" class="w-25 my-4" alt="">
+
+                            <h5 class="mt-3 font-weight-bold text-black mb-2">تجارة عامة</h5>
+                            <p class="text-secondary mb-2">خدمة التجارة العامة لدينا مميزة عصرية حيث نبحث دائما عن
+                                التميز</p>
+                            <a href="#" title="" class="lnk-default2 my-4" style="font-size: 14px;font-weight: normal;">اقرأ
+                                المزيد <i
+                                        class="la la-arrow-left"></i></a>
+                            <div class="clearfix"></div>
+
+                        </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                <div class="team">
-                                    <img src="https://via.placeholder.com/280x280" alt="">
-                                    <div class="figcaption">
-                                        <h3>Daniel Nikolson</h3>
-                                        <span>Designer</span>
-                                    </div>
-                                </div><!--team end-->
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                <div class="team">
-                                    <img src="https://via.placeholder.com/280x280" alt="">
-                                    <div class="figcaption">
-                                        <h3>Daniel Nikolson</h3>
-                                        <span>Designer</span>
-                                    </div>
-                                </div><!--team end-->
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                <div class="team">
-                                    <img src="https://via.placeholder.com/280x280" alt="">
-                                    <div class="figcaption">
-                                        <h3>Daniel Nikolson</h3>
-                                        <span>Designer</span>
-                                    </div>
-                                </div><!--team end-->
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                <div class="team">
-                                    <img src="https://via.placeholder.com/280x280" alt="">
-                                    <div class="figcaption">
-                                        <h3>Daniel Nikolson</h3>
-                                        <span>Designer</span>
-                                    </div>
-                                </div><!--team end-->
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                <div class="team">
-                                    <img src="https://via.placeholder.com/280x280" alt="">
-                                    <div class="figcaption">
-                                        <h3>Daniel Nikolson</h3>
-                                        <span>Designer</span>
-                                    </div>
-                                </div><!--team end-->
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                <div class="team">
-                                    <img src="https://via.placeholder.com/280x280" alt="">
-                                    <div class="figcaption">
-                                        <h3>Daniel Nikolson</h3>
-                                        <span>Designer</span>
-                                    </div>
-                                </div><!--team end-->
-                            </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                        <div class="mint-shadow w-100 h-100 p-3 text-center">
+
+                            <img src="{{asset("images/icons/events_organizer_icon.svg")}}" class="w-25 my-4" alt="">
+                            <h5 class="mt-3 font-weight-bold text-black mb-2">اقامة المؤتمرات</h5>
+                            <p class="">خدمة التجارة العامة لدينا مميزة عصرية حيث نبحث دائما عن
+                                التميز</p>
+                            <a href="#" title="" class="lnk-default2 my-4" style="font-size: 14px;font-weight: normal;">اقرأ
+                                المزيد <i
+                                        class="la la-arrow-left"></i></a>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                        <div class="mint-shadow w-100 h-100 p-3 text-center">
+                            <img src="{{asset("images/icons/decor_icon.svg")}}" class="w-25 my-4" alt="">
+
+                            <h5 class="mt-3 font-weight-bold text-black mb-2">تصميم الديكور</h5>
+                            <p class="text-secondary mb-2">خدمة التجارة العامة لدينا مميزة عصرية حيث نبحث دائما عن
+                                التميز</p>
+                            <a href="#" title="" class="lnk-default2 my-4" style="font-size: 14px;font-weight: normal;">اقرأ
+                                المزيد <i
+                                        class="la la-arrow-left"></i></a>
+                            <div class="clearfix"></div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                        <div class="mint-shadow w-100 h-100 p-3 text-center">
+                            <img src="{{asset("images/icons/events_icon2.svg")}}" class="w-25 my-4" alt="">
+
+                            <h5 class="mt-3 font-weight-bold text-black mb-2">تنظيم المعارض</h5>
+                            <p class="text-secondary mb-2">خدمة التجارة العامة لدينا مميزة عصرية حيث نبحث دائما عن
+                                التميز</p>
+                            <a href="#" title="" class="lnk-default2 my-4" style="font-size: 14px;font-weight: normal;">اقرأ
+                                المزيد <i
+                                        class="la la-arrow-left"></i></a>
+                            <div class="clearfix"></div>
+
                         </div>
                     </div>
                 </div>
-            </div><!--team-section end-->
-        </div>
-    </section>
-
-    <section class="block">
-        <div class="container">
-            <div class="section-title align-items-center">
-                <h3 class="sub-title">Our work process make your dream true</h3>
-                <a href="#" title="" class="lnk-default2">More detailed <i class="la la-arrow-right"></i></a>
-            </div><!--section-title end-->
-            <div class="process-section">
-                <ul>
-                    <li>
-                        <div class="proz-mint">
-                            <h3>Concept</h3>
-                            <p>Donec vitae semper, quis finibus mauris. Morbi tortor</p>
-                            <h2 class="p-num">01.</h2>
-                        </div><!--proz-mint end-->
-                    </li>
-                    <li>
-                        <div class="proz-mint">
-                            <h3>Design</h3>
-                            <p>Donec vitae semper, quis finibus mauris. Morbi tortor</p>
-                            <h2 class="p-num">03.</h2>
-                        </div><!--proz-mint end-->
-                    </li>
-                    <li>
-                        <div class="proz-mint">
-                            <h3>Launch</h3>
-                            <p>Donec vitae semper, quis finibus mauris. Morbi tortor</p>
-                            <h2 class="p-num">05.</h2>
-                        </div><!--proz-mint end-->
-                    </li>
-                    <li>
-                        <div class="proz-mint">
-                            <h3>Plan</h3>
-                            <p>Donec vitae semper, quis finibus mauris. Morbi tortor</p>
-                            <h2 class="p-num">02.</h2>
-                        </div><!--proz-mint end-->
-                    </li>
-                    <li>
-                        <div class="proz-mint">
-                            <h3>Build</h3>
-                            <p>Donec vitae semper, quis finibus mauris. Morbi tortor</p>
-                            <h2 class="p-num">04.</h2>
-                        </div><!--proz-mint end-->
-                    </li>
-                </ul>
-                <div class="clearfix"></div>
-            </div><!--process-section end-->
+            </div>
         </div>
     </section>
 
@@ -355,43 +153,43 @@
                 <div class="row">
                     <div class="col-lg-5">
                         <div class="project-text">
-                            <h3 class="sub-title">Our latest projects</h3>
-                            <p>This is why we are proud to offer a wide selection of our designer ceiling, wall, floor
-                                and table lamps. You will also find products ranging from modern styles, modern
-                                interpretations of classic design. Our collection is updated every day with beautiful
-                                solutions and we are glad that you, our customers </p>
-                            <a href="portfolio.html" title="" class="lnk-default2">View more <i
-                                    class="la la-arrow-right"></i></a>
+                            <h3 class="sub-title">معرض الاعمال</h3>
+                            <p>في قسم معرض الأعمال بـ "صقر الشاهين"، نعتبر الإبداع والتميز ركيزتين أساسيتين للتفرد
+                                والتميز في عرض أعمالنا. نقدم لعملائنا وشركائنا فرصة فريدة لاستكشاف عالمنا المتميز من
+                                خلال مجموعة متنوعة من المشاريع والإبداعات.</p>
+                            <a href="#" title="" class="lnk-default2">اقرأ المزيد <i
+                                        class="la la-arrow-left"></i></a>
                         </div><!--project-text end-->
                     </div>
                     <div class="col-lg-7">
                         <div class="project-carousel">
                             <div class="project-item">
-                                <img src="https://via.placeholder.com/345x453" alt="">
+                                <img src="https://images.pexels.com/photos/12119203/pexels-photo-12119203.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                     alt="">
                                 <div class="project-info">
-                                    <h3><a href="portfolio-details.html" title="">Living room</a></h3>
-                                    <span>59 projects</span>
+                                    <h3><a href="#" title="">غرف المعيشه</a></h3>
+                                    <span>59 مشروع</span>
                                 </div><!--project-info end-->
                             </div><!--project-item end-->
                             <div class="project-item">
-                                <img src="https://via.placeholder.com/345x453" alt="">
+                                <img src="{{asset("images/projects/3.jpeg")}}" alt="">
                                 <div class="project-info">
-                                    <h3><a href="portfolio-details.html" title="">Kitchen</a></h3>
-                                    <span>75 projects</span>
+                                    <h3><a href="#" title="">المطابخ والصلات</a></h3>
+                                    <span>75 مشروع</span>
                                 </div><!--project-info end-->
                             </div><!--project-item end-->
                             <div class="project-item">
-                                <img src="https://via.placeholder.com/345x453" alt="">
+                                <img src="{{asset("images/projects/2.jpg")}}" alt="">
                                 <div class="project-info">
-                                    <h3><a href="portfolio-details.html" title="">Commercial</a></h3>
-                                    <span>49 projects</span>
+                                    <h3><a href="#" title="">غرف الاستقبال</a></h3>
+                                    <span>49 مشروع</span>
                                 </div><!--project-info end-->
                             </div><!--project-item end-->
                             <div class="project-item">
-                                <img src="https://via.placeholder.com/345x453" alt="">
+                                <img src="{{asset("images/projects/1.jpeg")}}" alt="">
                                 <div class="project-info">
-                                    <h3><a href="portfolio-details.html" title="">Living room</a></h3>
-                                    <span>59 projects</span>
+                                    <h3><a href="#" title="">غرف نوم</a></h3>
+                                    <span>59 مشروع</span>
                                 </div><!--project-info end-->
                             </div><!--project-item end-->
                         </div><!--project-carousel end-->
@@ -401,190 +199,54 @@
         </div>
     </section>
 
-    <section class="block testi-section">
-        <div class="container">
-            <div class="section-title">
-                <h3 class="sub-title">Thanks for your sweet words to us</h3>
-            </div><!--section-title end-->
-            <div class="testimonial-section">
-                <div class="row testi-carousel">
-                    <div class="col-lg-4">
-                        <div class="testi-slide">
-                            <div class="testi-head">
-                                <img src="https://via.placeholder.com/70x70" alt="">
-                                <div class="user-info">
-                                    <h3>Alana Francheska</h3>
-                                    <span>Lorem company</span>
-                                </div>
-                            </div>
-                            <p>Integer vehicula, est vel posuere gravida, eros tellus fermentum magna, sit amet mattis
-                                mauris quam a nisl. Mauris vitae commodo elit. In hac habitasse platea.</p>
-                            <ul class="rating">
-                                <li><i class="la la-star"></i></li>
-                                <li><i class="la la-star"></i></li>
-                                <li><i class="la la-star"></i></li>
-                                <li><i class="la la-star"></i></li>
-                                <li><i class="la la-star"></i></li>
-                            </ul>
-                        </div><!--testi-slide end-->
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testi-slide">
-                            <div class="testi-head">
-                                <img src="https://via.placeholder.com/70x70" alt="">
-                                <div class="user-info">
-                                    <h3>Donald Pakura</h3>
-                                    <span>Lorem company</span>
-                                </div>
-                            </div>
-                            <p>Integer vehicula, est vel posuere gravida, eros tellus fermentum magna, sit amet mattis
-                                mauris quam a nisl. Mauris vitae commodo elit. In hac habitasse platea.</p>
-                            <ul class="rating">
-                                <li><i class="la la-star"></i></li>
-                                <li><i class="la la-star"></i></li>
-                                <li><i class="la la-star"></i></li>
-                                <li><i class="la la-star"></i></li>
-                                <li><i class="la la-star"></i></li>
-                            </ul>
-                        </div><!--testi-slide end-->
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testi-slide">
-                            <div class="testi-head">
-                                <img src="https://via.placeholder.com/70x70" alt="">
-                                <div class="user-info">
-                                    <h3>Sara Kristian</h3>
-                                    <span>Lorem company</span>
-                                </div>
-                            </div>
-                            <p>Integer vehicula, est vel posuere gravida, eros tellus fermentum magna, sit amet mattis
-                                mauris quam a nisl. Mauris vitae commodo elit. In hac habitasse platea.</p>
-                            <ul class="rating">
-                                <li><i class="la la-star"></i></li>
-                                <li><i class="la la-star"></i></li>
-                                <li><i class="la la-star"></i></li>
-                                <li><i class="la la-star"></i></li>
-                                <li><i class="la la-star"></i></li>
-                            </ul>
-                        </div><!--testi-slide end-->
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testi-slide">
-                            <div class="testi-head">
-                                <img src="https://via.placeholder.com/70x70" alt="">
-                                <div class="user-info">
-                                    <h3>Alana Francheska</h3>
-                                    <span>Lorem company</span>
-                                </div>
-                            </div>
-                            <p>Integer vehicula, est vel posuere gravida, eros tellus fermentum magna, sit amet mattis
-                                mauris quam a nisl. Mauris vitae commodo elit. In hac habitasse platea.</p>
-                            <ul class="rating">
-                                <li><i class="la la-star"></i></li>
-                                <li><i class="la la-star"></i></li>
-                                <li><i class="la la-star"></i></li>
-                                <li><i class="la la-star"></i></li>
-                                <li><i class="la la-star"></i></li>
-                            </ul>
-                        </div><!--testi-slide end-->
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testi-slide">
-                            <div class="testi-head">
-                                <img src="https://via.placeholder.com/70x70" alt="">
-                                <div class="user-info">
-                                    <h3>Alana Francheska</h3>
-                                    <span>Lorem company</span>
-                                </div>
-                            </div>
-                            <p>Integer vehicula, est vel posuere gravida, eros tellus fermentum magna, sit amet mattis
-                                mauris quam a nisl. Mauris vitae commodo elit. In hac habitasse platea.</p>
-                            <ul class="rating">
-                                <li><i class="la la-star"></i></li>
-                                <li><i class="la la-star"></i></li>
-                                <li><i class="la la-star"></i></li>
-                                <li><i class="la la-star"></i></li>
-                                <li><i class="la la-star"></i></li>
-                            </ul>
-                        </div><!--testi-slide end-->
-                    </div>
-                </div>
-            </div><!--testimonial-section end-->
-        </div>
-    </section>
-
-    <section class="consultation-sec">
-        <div class="container">
-            <div class="consultation-section">
-                <div class="row align-items-center">
-                    <div class="col-lg-7">
-                        <div class="consult-text">
-                            <h3 class="sub-title">Get a free consultation. Just leave a request below</h3>
-                            <form class="subsc-form">
-                                <input type="text" name="name" placeholder="Your phone number">
-                                <button type="submit" class="lnk-default">Сallback <i class="la la-arrow-right"></i>
-                                    <span></span></button>
-                            </form>
-                        </div><!--consult-text end-->
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="consult-img wow slideInUp" data-wow-duration="1000ms">
-                            <img src="https://via.placeholder.com/484x646" alt="">
-                        </div><!--consult-img end-->
-                    </div>
-                </div>
-            </div><!--consultation-section end-->
-        </div>
-    </section>
 
     <section class="block">
         <div class="container">
-            <h3 class="sub-title">Our Blog and News</h3>
+            <h3 class="sub-title">الاخبار والنشاطات</h3>
             <div class="blog-posts">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="blog-post">
                             <div class="blog-thumbnail">
-                                <img src="https://via.placeholder.com/473x373" alt="">
-                                <span class="category">Interior design</span>
+                                <img src="{{asset("images/blog/1.jpg")}}" alt="">
+                                <span class="category">الخبر الاول</span>
                             </div>
                             <div class="blog-info">
-                                <span>Jul 21, 2020</span>
-                                <h2 class="blog-title"><a href="blog-single.html" title="">Types of home</a></h2>
-                                <p>Sed pellentesque velit a elit mattis, a volutpat neque feugiat</p>
-                                <a href="blog-single.html" title="" class="lnk-default2">View more <i
-                                        class="la la-arrow-right"></i></a>
+                                <span>فبراير 21, 2024</span>
+                                <h2 class="blog-title"><a href="#" title="">عنوان الخبر</a></h2>
+                                <p>التفاصيل التفاصيل الخاصة بالخبر</p>
+                                <a href="#" title="" class="lnk-default2">اقرا المزيد<i
+                                            class="la la-arrow-left"></i></a>
                             </div>
                         </div><!--blog-post end-->
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="blog-post">
                             <div class="blog-thumbnail">
-                                <img src="https://via.placeholder.com/473x373" alt="">
+                                <img src="{{asset("images/blog/2.jpg")}}" alt="">
                                 <span class="category">Interior design</span>
                             </div>
                             <div class="blog-info">
-                                <span>Jul 21, 2020</span>
-                                <h2 class="blog-title"><a href="blog-single.html" title="">Purchase of furniture</a>
-                                </h2>
-                                <p>Sed pellentesque velit a elit mattis, a volutpat neque feugiat</p>
-                                <a href="blog-single.html" title="" class="lnk-default2">View more <i
-                                        class="la la-arrow-right"></i></a>
+                                <span>فبراير 21, 2024</span>
+                                <h2 class="blog-title"><a href="#" title="">عنوان الخبر</a></h2>
+                                <p>التفاصيل التفاصيل الخاصة بالخبر</p>
+                                <a href="#" title="" class="lnk-default2">اقرا المزيد<i
+                                            class="la la-arrow-left"></i></a>
                             </div>
                         </div><!--blog-post end-->
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="blog-post">
                             <div class="blog-thumbnail">
-                                <img src="https://via.placeholder.com/473x373" alt="">
+                                <img src="{{asset("images/blog/1.jpg")}}" alt="">
                                 <span class="category">Interior design</span>
                             </div>
                             <div class="blog-info">
-                                <span>Jul 21, 2020</span>
-                                <h2 class="blog-title"><a href="blog-single.html" title="">Kitchen design ideas</a></h2>
-                                <p>Sed pellentesque velit a elit mattis, a volutpat neque feugiat</p>
-                                <a href="blog-single.html" title="" class="lnk-default2">View more <i
-                                        class="la la-arrow-right"></i></a>
+                                <span>فبراير 21, 2024</span>
+                                <h2 class="blog-title"><a href="#" title="">عنوان الخبر</a></h2>
+                                <p>التفاصيل التفاصيل الخاصة بالخبر</p>
+                                <a href="#" title="" class="lnk-default2">اقرا المزيد<i
+                                            class="la la-arrow-left"></i></a>
                             </div>
                         </div><!--blog-post end-->
                     </div>
@@ -592,94 +254,27 @@
             </div><!---blog-posts end-->
         </div>
     </section>
-
-    <footer>
+    <section class="consultation-sec" style="margin-bottom: 160px">
         <div class="container">
-            <div class="top-footer">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="widget widget-info">
-                            <h3 class="widget-title">NEWSLETTER</h3>
-                            <form class="widget-form">
-                                <input type="text" name="email" placeholder="Your e-mail">
-                                <button type="submit"><i class="la la-arrow-right"></i></button>
+            <div class="consultation-section">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="consult-text">
+                            <h3 class="sub-title">اشترك في القائمة البريدية.</h3>
+                            <form class="subsc-form">
+                                <input type="email" name="name" placeholder="البريد الالكتروني">
+                                <button type="submit" class="lnk-default">ارسال <i class="la la-arrow-left"></i>
+                                    <span></span></button>
                             </form>
-                            <span>Sign up to receive sprecial offers!</span>
-                            <ul class="social-links">
-                                <li><a href="#" title=""><i class="fab fa-behance"></i></a></li>
-                                <li><a href="#" title=""><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#" title=""><i class="fab fa-facebook-f"></i></a></li>
-                            </ul><!--social-links end-->
-                        </div><!--widget-info end-->
+                        </div><!--consult-text end-->
                     </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                                <div class="widget widget-contact text-right">
-                                    <h3 class="widget-title">Contact Us</h3>
-                                    <ul class="ft-links">
-                                        <li>1556 Broadway, suite 416 New York, NY 10120 USA</li>
-                                        <li>+44 20 7722 0088</li>
-                                        <li><a href="#" title="">in.design@gmail.com</a></li>
-                                    </ul><!--ft-links end-->
-                                </div><!--widget-contact end-->
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                                <div class="widget widget-category text-right">
-                                    <h3 class="widget-title">Contact Us</h3>
-                                    <ul class="ft-links">
-                                        <li><a href="#" title="">Decor</a></li>
-                                        <li><a href="#" title="">Furniture</a></li>
-                                        <li><a href="#" title="">Lighting</a></li>
-                                        <li><a href="#" title="">Interior design</a></li>
-                                        <li><a href="#" title="">Architecture design</a></li>
-                                        <li><a href="#" title="">Commercial design</a></li>
-                                    </ul><!--ft-links end-->
-                                </div><!--widget-contact end-->
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                                <div class="widget widget-company text-right">
-                                    <h3 class="widget-title">Contact Us</h3>
-                                    <ul class="ft-links">
-                                        <li><a href="about.html" title="">About Us</a></li>
-                                        <li><a href="services.html" title="">Services</a></li>
-                                        <li><a href="portfolio.html" title="">Portfolio</a></li>
-                                        <li><a href="#" title="">Delivery</a></li>
-                                        <li><a href="contact.html" title="">Contact Us</a></li>
-                                        <li><a href="blog.html" title="">Blog</a></li>
-                                    </ul><!--ft-links end-->
-                                </div><!--widget-contact end-->
-                            </div>
-                        </div>
+                    <div class="col-lg-5">
+                        <div class="consult-img wow slideInUp" data-wow-duration="1000ms">
+                            <img src="{{asset('images/newsletter.jpg')}}" alt="">
+                        </div><!--consult-img end-->
                     </div>
                 </div>
-            </div><!--top-footer end-->
-            <div class="bottom-footer">
-                <div class="ft-logo">
-                    <img src="../../images/ft-logo.png" alt="">
-                </div><!--ft-logo end-->
-                <ul class="btm-links">
-                    <li><a href="#" title="">Privacy Policy</a></li>
-                    <li><a href="#" title="">Terms and Conditions</a></li>
-                </ul><!--btm-links end-->
-                <div class="clearfix"></div>
-            </div><!--bottom-footer end-->
+            </div><!--consultation-section end-->
         </div>
-    </footer><!--footer end-->
-
-</div><!--wrapper end-->
-
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/plugin/slick.min.js"></script>
-<script src="js/plugin/html5lightbox.js"></script>
-<script src="js/placeholdem.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/script.js"></script>
-
-
-
-</body>
-
-</html>
+    </section>
+@endsection

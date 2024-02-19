@@ -1,3 +1,9 @@
+/*
+ * Copyright notice for the website built for saqer.com.iq.
+ * Copyright (c) 2024. Jodx.dev. All rights reserved.
+ * This work is protected by copyright law. Unauthorized reproduction, distribution, or modification is strictly prohibited.
+ */
+
 
 @media (max-width: 1450px) {
 	.project-text > p {font-size: 18px;}
@@ -81,7 +87,7 @@
 	.pagination-mint nav {display: block;}
 	.catalog-product-info {padding-left: 0;}
 	.catalog-product-info > h2 {font-size: 38px;line-height: 47px;}
-	.catalog-product-slide img {height: 300px;object-fit: contain;} 
+	.catalog-product-slide img {height: 300px;object-fit: contain;}
 	.catalog-product-info {margin-top: 80px;}
 	.contact_info {padding: 67px 40px;}
 	.contact-head {padding-top: 0;}
@@ -98,7 +104,7 @@
 
 
 @media (max-width: 991px) {
-	header {top: 30px;}	
+	header {top: 30px;}
 	.banner-slider {display: none;}
 	.banner-content {padding-top: 40px;}
 	.about-text {margin-top: 100px;}
@@ -200,7 +206,7 @@
 @media (max-width: 576px) {
 	.banner-content {padding-top: 20px;}
 	.lnk-default {height: 50px;line-height: 50px;padding: 0 30px;}
-	.main-banner {padding: 110px 0 65px;}
+	.main-banner {padding: 152px 0 65px;}
 	.mint-funcz {display: none;}
 	.block {padding: 80px 0;}
 	.sub-title {font-size: 34px;line-height: 45px;}
@@ -216,7 +222,10 @@
 	.sub-title {font-size: 30px;}
 	.section-title .lnk-default2 {display: none;}
 	.project-text > p {font-size: 18px;line-height: 34px;margin-bottom: 35px;}
-	.menu-btnn {margin-left: auto;}
+	.menu-btnn {margin-right: auto;}
+	.header-content .social-links{
+		display: none;
+	}
 	.error-text > img {max-width: 60%;margin-bottom: 30px;}
 	.error-text > h2 {font-size: 28px;margin-bottom: 20px;}
 	.error-text p {font-size: 16px;line-height: 28px;margin-bottom: 50px;}

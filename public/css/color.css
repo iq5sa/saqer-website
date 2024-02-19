@@ -1,3 +1,9 @@
+/*
+ * Copyright notice for the website built for saqer.com.iq.
+ * Copyright (c) 2024. Jodx.dev. All rights reserved.
+ * This work is protected by copyright law. Unauthorized reproduction, distribution, or modification is strictly prohibited.
+ */
+
 nav ul li a:hover,
 .contact-head-info > a,
 .banner-content > h2 span,
@@ -22,7 +28,7 @@ input#amount,
 .catg-controls li a:hover,
 .social-links.without-bg li a,
 .option-set li a.selected {
-	color: #0d6b68;
+	color: #a53686;
 }
 
 .responsive-mobile-menu,
@@ -56,14 +62,17 @@ input:checked + .slider,
 .thecube .cube:before,
 .failed,
 .text-info {
-	background-color: #0d6b68;
+	background-color: #a53686;
+	color: white;
  }
+
+
 
 .proz-mint:after,
 .dott:before,
 .ui-slider-horizontal .ui-slider-handle,
 .form-control:focus {
-	border-color: #0d6b68;
+	border-color: #3C0753;
 }
 
 
