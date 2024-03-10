@@ -34,73 +34,32 @@
 					</div><!--isotope options end-->
 					<div class="row">
 						<div class="masonary">
-							<div class="col-lg-4 col-md-4 col-sm-6 architecture">
-								<div class="project-item">
-									<img src="{{asset("images/projects/1.jpeg")}}" alt="">
-									<div class="project-info">
-										<h3><a href="#" title="">تصاميم ديكور</a></h3>
-										<span>59 مشروع</span>
-									</div><!--project-info end-->
-								</div><!--project-item end-->
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-6 architecture">
-								<div class="project-item">
-									<img src="{{asset("images/projects/3.jpeg")}}" alt="">
-									<div class="project-info">
-										<h3><a href="#" title="">مجال التجارة</a></h3>
-										<span>75 مشروع</span>
-									</div><!--project-info end-->
-								</div><!--project-item end-->
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-6 architecture architecture">
-								<div class="project-item">
-									<img src="{{asset("images/projects/3.jpeg")}}" alt="">
-									<div class="project-info">
-										<h3><a href="#" title="">تنظيم مؤتمرات</a></h3>
-										<span>49 مشروع</span>
-									</div><!--project-info end-->
-								</div><!--project-item end-->
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-6 architecture">
-								<div class="project-item">
-									<img src="{{asset("images/projects/1.jpeg")}}" alt="">
-									<div class="project-info">
-										<h3><a href="#" title="">تنظيم معارض</a></h3>
-										<span>59 مشروع</span>
-									</div><!--project-info end-->
-								</div><!--project-item end-->
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-6 architecture">
-								<div class="project-item">
-									<img src="{{asset("images/projects/1.jpeg")}}" alt="">
-									<div class="project-info">
-										<h3><a href="#" title="">تنظيم معارض</a></h3>
-										<span>59 مشروع</span>
-									</div><!--project-info end-->
-								</div><!--project-item end-->
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-6 architecture">
-								<div class="project-item">
-									<img src="{{asset("images/projects/2.jpg")}}" alt="">
-									<div class="project-info">
-										<h3><a href="#" title="">تجارة عامة</a></h3>
-										<span>75 مشروع</span>
-									</div><!--project-info end-->
-								</div><!--project-item end-->
-							</div>
+							@foreach($portfolios as $portfolio)
+								<div class="col-lg-4 col-md-4 col-sm-6 architecture">
+									<div class="project-item">
+										<img src="{{url('/storage/'. $portfolio->image)}}" alt="">
+										<div class="project-info">
+											<h3><a href="#" title="">{{$portfolio->title}}</a></h3>
+											<span>{{\App\Models\Category::find($portfolio->category_id)->title}}</span>
+										</div><!--project-info end-->
+									</div><!--project-item end-->
+								</div>
+							@endforeach
+
+
 						</div><!--masonary end-->
 					</div>
-					<div class="pagination-mint">
-						<nav aria-label="Page navigation example">
-							<ul class="pagination">
-						    	<li class="page-item"><a class="page-link prev" href="#"><i class="fa fa-angle-left"></i>السابق</a></li>
-						    	<li class="page-item"><a class="page-link active" href="#">1</a></li>
-						    	<li class="page-item"><a class="page-link" href="#">2</a></li>
-						    	<li class="page-item"><a class="page-link" href="#">3</a></li>
-						    	<li class="page-item"><a class="page-link next" href="#">التالي <i class="fa fa-angle-right"></i></a></li>
-						  	</ul>
-						</nav>
-					</div>
+{{--					<div class="pagination-mint">--}}
+{{--						<nav aria-label="Page navigation example">--}}
+{{--							<ul class="pagination">--}}
+{{--						    	<li class="page-item"><a class="page-link prev" href="#"><i class="fa fa-angle-left"></i>السابق</a></li>--}}
+{{--						    	<li class="page-item"><a class="page-link active" href="#">1</a></li>--}}
+{{--						    	<li class="page-item"><a class="page-link" href="#">2</a></li>--}}
+{{--						    	<li class="page-item"><a class="page-link" href="#">3</a></li>--}}
+{{--						    	<li class="page-item"><a class="page-link next" href="#">التالي <i class="fa fa-angle-right"></i></a></li>--}}
+{{--						  	</ul>--}}
+{{--						</nav>--}}
+{{--					</div>--}}
 				</div><!--portfolio-page end-->
 			</div>
 		</section><!--page-content end-->

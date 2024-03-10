@@ -9,6 +9,8 @@ $(window).on("load", function() {
 
     //  ============= MOBILE RESPONSIVE MENU ===============
 
+    // $('.portfolio-image').magnificPopup({type:'image'});
+
     $(".menu-btn").on("click", function(){
       $(this).toggleClass("active");
       $(".responsive-mobile-menu").toggleClass("active");

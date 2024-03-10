@@ -1,150 +1,169 @@
 @extends('template.layout')
+@section('css')
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+@endsection
 @section('content')
     <section class="main-banner">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="banner-content">
-                        <h2 class="wow fadeInUp" data-wow-duration="1000ms"> شركة صقر
-                            الشاهين</h2>
+                        <h2 class="wow fadeInUp" data-wow-duration="1000ms">{{$sliders->title}}</h2>
+                        <h2 class="wow fadeInUp" data-wow-duration="1000ms">{{$sliders->subtitle}}</h2>
                         <p class="wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-
-                            في شركة صقر الشاهين، نتجاوز أن نكون مجرد شركة؛ بل نجسد تواصلًا رؤويا متطورة بين التجارة
-                            العالمية والتصميم الفني وتنظيم الفعاليات الاستثنائي.
+                            {{$sliders->description}}
                         </p>
-                        <a href="#" title="" class="lnk-default wow fadeInUp" data-wow-duration="1000ms"
-                           data-wow-delay="500ms">اكتشف المزيــد <i class="la la-arrow-left"></i> <span></span></a>
+                        <a href="{{route("about")}}" title="" class="lnk-default wow fadeInUp"
+                           data-wow-duration="1000ms"
+                           data-wow-delay="500ms">عرض المزيــد <i class="la la-arrow-left"></i> <span></span></a>
 
                         <div class="clearfix"></div>
                     </div><!--banner-content end-->
                 </div>
                 <div class="col-lg-6">
+
                     <div class="banner-slider">
-                        <div class="banner-slide">
-                            <img src="{{asset("images/banner/1.jpg")}}" alt="">
-                        </div><!--banner-slide end-->
-                        <div class="banner-slide">
-                            <img src="{{asset("images/banner/2.jpg")}}" alt="">
-                        </div><!--banner-slide end-->
-                        <div class="banner-slide">
-                            <img src="{{asset("images/banner/3.jpeg")}}" alt="">
-                        </div><!--banner-slide end-->
+                        @foreach($sliders->attachment as $sliderImage)
+                            <div class="banner-slide">
+                                <img src="{{url('storage/'.$sliderImage)}}" alt="">
+                            </div><!--banner-slide end-->
+
+                        @endforeach
+
                     </div><!--banner-slider end-->
                 </div>
             </div>
         </div>
     </section><!--main-banner end-->
-
-    <section class="block pb-0">
-        <div class="container">
-            <div class="about-us-section">
-                <div class="row align-items-center">
-
-                    <div class="col-lg-6">
-                        <div class="about-text">
-                            <h2 class="sub-title">المدير التنفيذي </h2>
-                            <p class="text-justify" style="line-height: 2em;height: 200px; overflow: hidden">
-
-                                أهلاً ومرحبًا بكم في عالم الابتكار والتميز حيث تتجاوب "صقر الشاهين" مع تحديات السوق بروح
-                                ريادية واستراتيجية تجعلنا متقدمين في ميداننا. نحن نفتخر بتقديم خدمات استثنائية ومنتجات
-                                فريدة تلبي توقعات عملائنا الكرام.
-
-                                في "صقر الشاهين"، نؤمن بالتميز في كل تفاصيل عملنا. نسعى جاهدين لتحقيق الريادة في مجالنا
-                                من خلال الابتكار المستمر وتحسين الأداء. نحن نعتبر أن كل فرد في فريقنا هو جزء لا غنى عنه
-                                من نجاحنا، ونعمل معًا بروح الفريق لتحقيق أهدافنا المشتركة.
-
-                                نحن ملتزمون بتقديم خدمة عملاء لا مثيل لها، وضمان رضاكم التام. نحن هنا لندعمكم ونساعدكم
-                                في تحقيق أهدافكم الاستراتيجية وتطلعاتكم المستقبلية. في "صقر الشاهين"، لا يكون التفوق
-                                مجرد هدف، بل يكون أسلوب حياة نتبناه.
-
-                                نتطلع إلى بناء علاقة قائمة على الثقة والشفافية معكم، ونأمل أن تكونوا جزءًا لا يتجزأ من
-                                رحلتنا نحو النجاح. شكرًا لثقتكم بنا وبفريق عمل "صقر الشاهين".
-
-                                مع خالص التقدير،
-
-                            </p>
-                            <a href="#" title="" class="lnk-default2 mb-4">اقرأ المزيد <i
-                                        class="la la-arrow-left"></i></a>
-                        </div><!--about-text end-->
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="">
-                            <img class="wow fadeInUp img-fluid mint-shadow" data-wow-duration="1000ms"
-                                 src="{{asset("images/ceo.jpeg")}}" alt="">
-
-                        </div><!--abt-imgz end-->
-
-                    </div>
-                </div>
-            </div><!--about-us-section end-->
-        </div>
-    </section>
-
-    <section class="block pb-0" style="margin-bottom: 160px;">
+    <section class="block pb-5">
         <div class="container">
             <h3 class="sub-title">خدماتنا</h3>
             <div class="team-section">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                        <div class="mint-shadow w-100 h-100 p-3 text-center">
-                            <img src="{{asset("images/icons/general_trade_icon.svg")}}" class="w-25 my-4" alt="">
+                    @foreach($services as $service)
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                            <div class="mint-shadow w-100 h-100 p-3 text-center">
+                                <img src="{{url("storage/".$service->image)}}" class="w-25 my-4" alt="">
 
-                            <h5 class="mt-3 font-weight-bold text-black mb-2">تجارة عامة</h5>
-                            <p class="text-secondary mb-2">خدمة التجارة العامة لدينا مميزة عصرية حيث نبحث دائما عن
-                                التميز</p>
-                            <a href="#" title="" class="lnk-default2 my-4" style="font-size: 14px;font-weight: normal;">اقرأ
-                                المزيد <i
-                                        class="la la-arrow-left"></i></a>
-                            <div class="clearfix"></div>
+                                <h5 class="mt-3 font-weight-bold text-black mb-2">{{$service->name}}</h5>
+                                <p class="text-secondary mb-2">{{$service->description}}</p>
+                                <a href="#" title="" class="lnk-default2 my-4"
+                                   style="font-size: 14px;font-weight: normal;">اقرأ
+                                    المزيد <i
+                                            class="la la-arrow-left"></i></a>
+                                <div class="clearfix"></div>
+
+                            </div>
+                        </div>
+                    @endforeach
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="block2 ">
+        <div class="fixed-bg bg1"></div>
+        <div class="container">
+            <div class="latest-projects-section">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="text-center">
+
+                            @if($videoPromotion)
+                                @php $embedUrl = \Illuminate\Support\Str::of($videoPromotion->url)->explode('v=');@endphp
+
+                                <div class="vlog-cover-bg video">
+                                    <a class="vlog-cover"
+                                       data-fancybox
+                                       href="{{$videoPromotion->url}}"
+                                       data-caption="{{$videoPromotion->title}}"
+                                       data-type="html5video">
+                                        <img
+                                                class="img-fluid attachment-vlog-cover-full size-vlog-cover-full wp-post-image"
+                                                src="https://i3.ytimg.com/vi/{{$embedUrl[1]}}/maxresdefault.jpg"
+                                                alt=""/>
+                                        <span class="vlog-format-action large"><i class="fa fa-play"></i></span>
+                                    </a>
+                                    <div class="vlog-format-content video"></div>
+                                </div>
+
+                            @endif
 
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                        <div class="mint-shadow w-100 h-100 p-3 text-center">
 
-                            <img src="{{asset("images/icons/events_organizer_icon.svg")}}" class="w-25 my-4" alt="">
-                            <h5 class="mt-3 font-weight-bold text-black mb-2">اقامة المؤتمرات</h5>
-                            <p class="">خدمة التجارة العامة لدينا مميزة عصرية حيث نبحث دائما عن
-                                التميز</p>
-                            <a href="#" title="" class="lnk-default2 my-4" style="font-size: 14px;font-weight: normal;">اقرأ
-                                المزيد <i
-                                        class="la la-arrow-left"></i></a>
-                        </div>
-
-
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                        <div class="mint-shadow w-100 h-100 p-3 text-center">
-                            <img src="{{asset("images/icons/decor_icon.svg")}}" class="w-25 my-4" alt="">
-
-                            <h5 class="mt-3 font-weight-bold text-black mb-2">تصميم الديكور</h5>
-                            <p class="text-secondary mb-2">خدمة التجارة العامة لدينا مميزة عصرية حيث نبحث دائما عن
-                                التميز</p>
-                            <a href="#" title="" class="lnk-default2 my-4" style="font-size: 14px;font-weight: normal;">اقرأ
-                                المزيد <i
-                                        class="la la-arrow-left"></i></a>
-                            <div class="clearfix"></div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                        <div class="mint-shadow w-100 h-100 p-3 text-center">
-                            <img src="{{asset("images/icons/events_icon2.svg")}}" class="w-25 my-4" alt="">
-
-                            <h5 class="mt-3 font-weight-bold text-black mb-2">تنظيم المعارض</h5>
-                            <p class="text-secondary mb-2">خدمة التجارة العامة لدينا مميزة عصرية حيث نبحث دائما عن
-                                التميز</p>
-                            <a href="#" title="" class="lnk-default2 my-4" style="font-size: 14px;font-weight: normal;">اقرأ
-                                المزيد <i
-                                        class="la la-arrow-left"></i></a>
-                            <div class="clearfix"></div>
-
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+    @if($abouts)
+        <section class="block pb-0">
+            <div class="container">
+                <div class="about-us-section">
+                    <h2 class="sub-title">المدير التنفيذي </h2>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="">
+                                <img class="wow fadeInUp img-fluid mint-shadow" data-wow-duration="1000ms"
+                                     src="{{url('storage/'.$abouts->ceo_picture)}}" alt="">
+
+                            </div><!--abt-imgz end-->
+
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="about-text">
+                                <p class="text-justify"
+                                   style="line-height: 2em;">{!! \Illuminate\Support\Str::limit($abouts->ceo_summary,500) !!}
+                                </p>
+                                <a href="{{route('about')}}" title="" class="lnk-default2 mb-4">اقرأ المزيد <i
+                                            class="la la-arrow-left"></i></a>
+                            </div><!--about-text end-->
+                        </div>
+
+                    </div>
+                </div><!--about-us-section end-->
+            </div>
+        </section>
+    @endif
+    <section class="block">
+        <div class="container">
+            <h3 class="sub-title">الاخبار والنشاطات</h3>
+            <div class="blog-posts">
+                <div class="row">
+                    @foreach($blogs as $blog)
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="blog-post">
+                                <div class="blog-thumbnail">
+                                    <img src="{{url('storage/'. $blog->image)}}" alt="">
+                                    <span class="category">{{\App\Models\Category::find($blog->category_id)->title}}</span>
+                                </div>
+                                <div class="blog-info">
+                                    <span>{{\Illuminate\Support\Carbon::parse($blog->created_at)->format("Y M D")}}</span>
+                                    <h2 class="blog-title"><a href="{{route('blog-details',["slug"=>$blog->slug])}}"
+                                                              title="">{{\Illuminate\Support\Str::limit($blog->title,30)}}</a>
+                                    </h2>
+                                    <p>{!! \Illuminate\Support\Str::limit($blog->content,100) !!}</p>
+                                    <a href="{{route('blog-details',["slug"=>$blog->slug])}}" title=""
+                                       class="lnk-default2">اقرا المزيد<i
+                                                class="la la-arrow-left"></i></a>
+                                </div>
+                            </div><!--blog-post end-->
+                        </div>
+
+                    @endforeach
+
+                </div>
+            </div><!---blog-posts end-->
+        </div>
+    </section>
+
+
 
     <section class="block2">
         <div class="fixed-bg bg1"></div>
@@ -154,44 +173,35 @@
                     <div class="col-lg-5">
                         <div class="project-text">
                             <h3 class="sub-title">معرض الاعمال</h3>
-                            <p>في قسم معرض الأعمال بـ "صقر الشاهين"، نعتبر الإبداع والتميز ركيزتين أساسيتين للتفرد
+                            <p class="text-justify">
+                                في قسم معرض الأعمال بـ "صقر الشاهين"، نعتبر الإبداع والتميز ركيزتين أساسيتين للتفرد
                                 والتميز في عرض أعمالنا. نقدم لعملائنا وشركائنا فرصة فريدة لاستكشاف عالمنا المتميز من
-                                خلال مجموعة متنوعة من المشاريع والإبداعات.</p>
-                            <a href="#" title="" class="lnk-default2">اقرأ المزيد <i
+                                خلال مجموعة متنوعة من المشاريع والإبداعات.
+
+
+                            </p>
+                            <a href="{{route('portfolio')}}" title="" class="lnk-default2">تصفح المزيد <i
                                         class="la la-arrow-left"></i></a>
                         </div><!--project-text end-->
                     </div>
                     <div class="col-lg-7">
                         <div class="project-carousel">
-                            <div class="project-item">
-                                <img src="https://images.pexels.com/photos/12119203/pexels-photo-12119203.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                     alt="">
-                                <div class="project-info">
-                                    <h3><a href="#" title="">غرف المعيشه</a></h3>
-                                    <span>59 مشروع</span>
-                                </div><!--project-info end-->
-                            </div><!--project-item end-->
-                            <div class="project-item">
-                                <img src="{{asset("images/projects/3.jpeg")}}" alt="">
-                                <div class="project-info">
-                                    <h3><a href="#" title="">المطابخ والصلات</a></h3>
-                                    <span>75 مشروع</span>
-                                </div><!--project-info end-->
-                            </div><!--project-item end-->
-                            <div class="project-item">
-                                <img src="{{asset("images/projects/2.jpg")}}" alt="">
-                                <div class="project-info">
-                                    <h3><a href="#" title="">غرف الاستقبال</a></h3>
-                                    <span>49 مشروع</span>
-                                </div><!--project-info end-->
-                            </div><!--project-item end-->
-                            <div class="project-item">
-                                <img src="{{asset("images/projects/1.jpeg")}}" alt="">
-                                <div class="project-info">
-                                    <h3><a href="#" title="">غرف نوم</a></h3>
-                                    <span>59 مشروع</span>
-                                </div><!--project-info end-->
-                            </div><!--project-item end-->
+
+                            @foreach($portfolios as $portfolio)
+
+                                <div class="project-item">
+
+                                        <img src="{{url('/storage/'.$portfolio->image)}}" alt="">
+                                        <div class="project-info">
+                                            <h3>{{$portfolio->title}}</h3>
+                                            <span>{{\App\Models\Category::find($portfolio->category_id)->title}}</span>
+                                        </div><!--project-info end-->
+
+                                </div>
+
+                            @endforeach
+
+
                         </div><!--project-carousel end-->
                     </div>
                 </div>
@@ -199,82 +209,49 @@
         </div>
     </section>
 
+    <section class="block testi-section">
+        <div class="container">
+            <div class="section-title">
+                <h3 class="sub-title">اراء عملائنا</h3>
+            </div><!--section-title end-->
 
-    <section class="block">
-        <div class="container">
-            <h3 class="sub-title">الاخبار والنشاطات</h3>
-            <div class="blog-posts">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="blog-post">
-                            <div class="blog-thumbnail">
-                                <img src="{{asset("images/blog/1.jpg")}}" alt="">
-                                <span class="category">الخبر الاول</span>
+            <div class="testimonial-section">
+                <div class="row testi-carousel">
+                    @foreach($testimonials as $testimonial)
+                        <div class="col-lg-4">
+                            <div class="testi-slide">
+                                <div class="testi-head">
+                                    <img src="{{url('/storage/'.$testimonial->image)}}" style="width: 70px" alt="">
+                                    <div class="user-info">
+                                        <h3>{{$testimonial->name}}</h3>
+                                        <span>{{$testimonial->company}}</span>
+                                    </div>
+                                </div>
+                                <p>{{$testimonial->content}} </p>
+                                <ul class="rating">
+                                    <li><i class="la la-star"></i></li>
+                                    <li><i class="la la-star"></i></li>
+                                    <li><i class="la la-star"></i></li>
+                                    <li><i class="la la-star"></i></li>
+                                    <li><i class="la la-star"></i></li>
+                                </ul>
                             </div>
-                            <div class="blog-info">
-                                <span>فبراير 21, 2024</span>
-                                <h2 class="blog-title"><a href="#" title="">عنوان الخبر</a></h2>
-                                <p>التفاصيل التفاصيل الخاصة بالخبر</p>
-                                <a href="#" title="" class="lnk-default2">اقرا المزيد<i
-                                            class="la la-arrow-left"></i></a>
-                            </div>
-                        </div><!--blog-post end-->
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="blog-post">
-                            <div class="blog-thumbnail">
-                                <img src="{{asset("images/blog/2.jpg")}}" alt="">
-                                <span class="category">Interior design</span>
-                            </div>
-                            <div class="blog-info">
-                                <span>فبراير 21, 2024</span>
-                                <h2 class="blog-title"><a href="#" title="">عنوان الخبر</a></h2>
-                                <p>التفاصيل التفاصيل الخاصة بالخبر</p>
-                                <a href="#" title="" class="lnk-default2">اقرا المزيد<i
-                                            class="la la-arrow-left"></i></a>
-                            </div>
-                        </div><!--blog-post end-->
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="blog-post">
-                            <div class="blog-thumbnail">
-                                <img src="{{asset("images/blog/1.jpg")}}" alt="">
-                                <span class="category">Interior design</span>
-                            </div>
-                            <div class="blog-info">
-                                <span>فبراير 21, 2024</span>
-                                <h2 class="blog-title"><a href="#" title="">عنوان الخبر</a></h2>
-                                <p>التفاصيل التفاصيل الخاصة بالخبر</p>
-                                <a href="#" title="" class="lnk-default2">اقرا المزيد<i
-                                            class="la la-arrow-left"></i></a>
-                            </div>
-                        </div><!--blog-post end-->
-                    </div>
+                        </div>
+                    @endforeach
+
                 </div>
-            </div><!---blog-posts end-->
+            </div><!--testimonial-section end-->
         </div>
     </section>
-    <section class="consultation-sec" style="margin-bottom: 160px">
-        <div class="container">
-            <div class="consultation-section">
-                <div class="row align-items-center">
-                    <div class="col-lg-7">
-                        <div class="consult-text">
-                            <h3 class="sub-title">اشترك في القائمة البريدية.</h3>
-                            <form class="subsc-form">
-                                <input type="email" name="name" placeholder="البريد الالكتروني">
-                                <button type="submit" class="lnk-default">ارسال <i class="la la-arrow-left"></i>
-                                    <span></span></button>
-                            </form>
-                        </div><!--consult-text end-->
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="consult-img wow slideInUp" data-wow-duration="1000ms">
-                            <img src="{{asset('images/newsletter.jpg')}}" alt="">
-                        </div><!--consult-img end-->
-                    </div>
-                </div>
-            </div><!--consultation-section end-->
-        </div>
-    </section>
+
+@endsection
+
+@section('js')
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind('[data-fancybox]', {
+            //
+        });
+    </script>
+
 @endsection
