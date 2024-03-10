@@ -12,6 +12,9 @@
 	.consult-text {padding-right: 0;}
 	.pager-section.style2 .pger-imgs {max-width: 50%;}
 	.sidebar {padding-right: 0;}
+	.vlog-format-action.large i {
+		font-size: 32px;
+	}
 }
 @media (max-width: 1366px) {
 	nav {padding-left: 75px;}
@@ -35,6 +38,9 @@
 	.section-title.style2 p {margin-top: 0;}
 	.cnst-img {right: 60px;width: 60%;}
 	nav > ul > li {margin-right: 30px;}
+	.vlog-format-action.large i {
+		font-size: 32px;
+	}
 }
 
 
@@ -46,7 +52,7 @@
 	.banner-content > p {padding-right: 30px;}
 	.banz-list li {margin-right: 40px;}
 	.banz-list li:last-child {margin-right: 0;}
-	.main-banner {padding: 110px 0 95px;}
+	.main-banner {padding: 185px 0 95px;}
 	.about-text > p {font-size: 16px;line-height: 29px;margin-bottom: 40px;}
 	.about-us-section .align-items-center {align-items: inherit !important;}
 	header {top: 30px;}
@@ -74,7 +80,7 @@
 	.pager-section {padding: 135px 0 100px;margin-bottom: 0;}
 	.pger-imgs {display: none;}
 	.our-history {max-width: 100%;}
-	.block2 {padding: 110px 0;}
+	.block2 {padding: 50px 0;}
 	.arch-section .sub-title {font-size: 28px;}
 	.award-col {padding: 0 40px 0 13px;}
 	.section-title .sub-title {max-width: 50%;}
@@ -100,6 +106,9 @@
 	.shop-info > h3 {max-width: 100%;}
 	.view-details {width: 65%;}
 	.widget-archives {padding: 42px 25px 40px;}
+	.vlog-format-action.large i {
+		font-size: 32px;
+	}
 }
 
 
@@ -107,7 +116,6 @@
 	header {top: 30px;}
 	.banner-slider {display: none;}
 	.banner-content {padding-top: 40px;}
-	.about-text {margin-top: 100px;}
 	.about-text {padding-left: 0;}
 	.block {padding: 110px 0;}
 	.about-us-section {margin-bottom: 0;}
@@ -115,7 +123,7 @@
 	.team-head > h2 {margin-bottom: 0;}
 	.team-head {padding: 0 60px 50px;}
 	.proz-mint {padding: 40px 50px 49px 26px;}
-	.block2 {padding: 85px 0;}
+	.block2 {padding: 50px 0;}
 	.project-text {margin-bottom: 50px;}
 	.project-carousel {padding-left: 0;margin: 0 -15px;}
 	.consultation-sec:before {height: 100%;}
@@ -155,6 +163,16 @@
 	.process-col {margin-bottom: 50px;}
 	.cnst-img {display: none;}
 	.processs-section {margin-bottom: -40px;}
+	.vlog-format-action.large{
+		height: 76px;
+		width: 76px;
+		margin-left: -38px;
+		padding: 22px 0 0 7px;
+		margin-top: -40px;
+	}
+	.vlog-format-action.large i {
+		font-size: 27px;
+	}
 }
 
 @media (max-width: 768px) {
@@ -200,6 +218,16 @@
 	.consult-text.style2 {padding: 60px 40px 75px 40px;}
 	.subsc-form input {width: 100%;}
 	.subsc-form .lnk-default {margin-left: 0;margin-top: 20px;}
+
+	.vlog-format-action.large{
+		height: 76px;
+		width: 76px;
+		margin-left: -38px;
+		padding: 22px 0 0 7px;
+		margin-top: -40px;
+	}
+
+
 }
 
 
@@ -217,14 +245,20 @@
 	.subsc-form .lnk-default {margin: 0;}
 	.consultation-sec {padding: 75px 0;}
 	.ft-logo {width: 100%;margin-bottom: 20px;}
+	.logo img{
+		width: 100px;
+	}
 	.btm-links {width: 100%;}
 	.bottom-footer {text-align: center;}
 	.sub-title {font-size: 30px;}
 	.section-title .lnk-default2 {display: none;}
 	.project-text > p {font-size: 18px;line-height: 34px;margin-bottom: 35px;}
-	.menu-btnn {margin-right: auto;}
+	.menu-btnn {margin-left: auto;margin-right: 30px}
 	.header-content .social-links{
 		display: none;
+	}
+	.header-content{
+		flex-direction: row-reverse;
 	}
 	.error-text > img {max-width: 60%;margin-bottom: 30px;}
 	.error-text > h2 {font-size: 28px;margin-bottom: 20px;}
@@ -251,11 +285,15 @@
 	.pro-head > h2 {font-size: 22px;}
 	.pz-head > h3 {font-size: 18px;}
 	.subsc-form {text-align: left;}
+	.vlog-format-action i, .vlog-icon i{
+		font-size: 27px;
+	}
+
 }
 
 
 @media (max-width: 480px) {
-	.banner-content > h2 {font-size: 40px;line-height: 52px;}
+	.banner-content > h2 {font-size: 36px;line-height: 52px;}
 	.banner-content > p {padding-right: 0;}
 	.banz-list li {margin-right: 0;width: 100%;margin-bottom: 30px;}
 	.banz-list li:last-child {margin:0;}
@@ -274,11 +312,11 @@
 	.btm-links li {display: block;margin-bottom: 15px;}
 	.btm-links li:last-child {margin-bottom: 0;}
 	.btm-links li:before {display: none;}
-	.main-banner {padding: 90px 0 65px;}
+	.main-banner {padding: 160px 0 65px;}
 	.error-text > h2 {font-size: 21px;margin-bottom: 20px;}
 	.error-text p {margin-bottom: 30px;max-width: 100%;}
 	.pager-info > h2, .pg-title-head > h2 {font-size: 36px;margin-bottom: 10px;}
-	.breadcrumb {margin-bottom: 10px;}
+	.breadcrumb {margin-bottom: 10px; margin-top: 10px}
 	.pager-info > span, .pg-title-head > span {font-size: 18px;}
 	.pager-section {padding: 115px 0 45px;}
 	p {font-size: 16px !important;line-height: 30px !important;}
@@ -312,4 +350,8 @@
 	.pro-head strong {left: 60%;margin-left: 0;}
 	.consult-text.style2 .sub-title:before {display: none;}
 	.consult-text.style2 .sub-title {padding-left: 0;font-size: 22px;line-height: 30px;}
+	.vlog-format-action i, .vlog-icon i{
+		font-size: 27px;
+	}
+
 }
